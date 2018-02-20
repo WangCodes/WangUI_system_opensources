@@ -1,5 +1,5 @@
 @echo off
-set ver=1.6x_release-key
+set ver=2.x_test-keys
 title WangUI Flyme6 PatchRom Tool Ver:%ver%
 set /p projectname=Your Project Name:
 set /p company=PCB company:
@@ -62,7 +62,7 @@ move WangUI_%projectname%_build.zip %~dp0\security\
 cd /d %~dp0\security\
 ren WangUI_%projectname%_build.zip update.zip
 echo 签名刷机包
-java -jar signapk.jar releasekey.x509.pem releasekey.pk8 update.zip update_signed.zip
+java -jar signapk.jar testkey.x509.pem testkey.pk8 update.zip update_signed.zip
 del /a /f /s /q update.zip
 move update_signed.zip ..\
 echo 转到上一级
