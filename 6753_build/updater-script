@@ -1,0 +1,7 @@
+ui_print("Installing WangUI");
+ui_print("This Version Is Made By BaseTool");
+block_image_update("system", package_extract_file("system.transfer.list"), "system.new.dat", "system.patch.dat");
+assert(package_extract_file("boot.img", "/tmp/boot.img"),
+       write_raw_image("/tmp/boot.img", "bootimg"),
+       delete("/tmp/boot.img"));
+delete("/data/nvram/APCFG/APRDCL/MD_Type");
