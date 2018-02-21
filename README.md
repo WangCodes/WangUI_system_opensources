@@ -20,6 +20,9 @@
             +-- 6753       魅蓝note2适配文件及工作目录
      +-- npp               Notepad++程序
      +-- security          密钥文件
+     +- README.md          本帮助文档
+     +- ReleaseBuild.cmd   主工作程序
+     +- Unpackdat.cmd      dat解包插件
 
 
 # 3. 代码下载
