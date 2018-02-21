@@ -42,7 +42,7 @@ set path=%path%;%~dp0\build;
 echo 转到out目录
 cd /d devices\%company%\%projectname%\out
 pause
-echo 打包dat 代码来自航母
+echo 打包dat镜像
 make_ext4fs.exe -T -1 -S file_contexts -l 1610612736 -a /system system.img system
 rimg2sdat.exe system.img
 dos2unix.exe system.transfer.list
