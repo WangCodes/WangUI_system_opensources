@@ -4,6 +4,8 @@
 
 [![License](https://img.shields.io/badge/License-Apache%20V2.0-blue.svg)](LICENSE)
 
+注意：因github上传文件为UNIX文件头，故根目录下的两个cmd需要转换成Windows文件头
+    因签名需要用到java环境，未安装的请在ReleaseBuild.cmd中删除签名部分
 
 # 2. 分支命名
 
