@@ -8,6 +8,15 @@ title WangUI Flyme6 PatchRom Tool Ver:%ver%
 set /p projectname=Your Project Name:
 if not exist %projectname%\ md %projectname%\
 
+:choose_rom
+echo Please choose the ziprom
+set open=
+echo.
+for /f "usebackq delims=" %%a in (`build\FileToOpen "set open=" "%~dp0\*.rom;*.zip"`) do %%a
+
+::unzip
+::write next time
+
 :selectformat
 set /p mode=Your rom's pack-mode(dat or folder):
 if %mode% equ dat (
@@ -25,6 +34,7 @@ goto selectformat
 :next_tomain
 echo Chdir to root
 cd /d %~dp0
+
 call editprop.cmd
 
 echo Delete Old Themes
