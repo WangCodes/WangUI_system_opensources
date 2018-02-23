@@ -1,0 +1,1 @@
+Unzip ota zip to this folder.

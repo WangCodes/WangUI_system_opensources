@@ -1,0 +1,1 @@
+Copy the boot.img you want in this folder
